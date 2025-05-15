@@ -1,0 +1,57 @@
+FUNCTIONS 
+          -- BLOCK OF CODE FOR REPEATED USE 
+		  -- ALLOWS TO GROUP A SET OF COMMANDS INTO A SINGLE, REUSABLE UNIT. 
+		  -- BREAK DOWN TOTAL FUNCTIONALITY OF SCRIPT INTO LOGICAL SUB-SECTIONS 
+          -- ENCAPSULATE AND REUSE CODE
+		  -- WE CAN CALL FUNCTIONS WHEN EVER NEEDED
+		  -- MAKE YOUR SCRIPTS MORE ORGANIZED, MODULAR, AND EASIER TO MAINTAIN.
+		  
+	
+
+============================================================
+
+FUNCTIONS IN PYTHON: 
+
+# Python example
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Madhu")	
+
+#############################
+
+ef greet(name):
+    print(f"hello, {name}")
+
+greet("madhu")
+greet("kiran")
+greet("123")
+=============================
+
+def add_numbers(num1,num2):
+
+    sum = num1 + num2
+    return sum
+
+result = add_numbers(3.2,4.1)
+
+print(f"output is : {result}")
+
+
+=============================
+
+
+def add_numbers(a,b):
+
+    sum = a + b
+    return sum
+
+
+num1 = float(input("Enter the 1st number:"))
+num2 = float(input("Enter the 2nd number:"))
+
+result = add_numbers(num1,num2)
+
+print(f"output is : {result}")
+
