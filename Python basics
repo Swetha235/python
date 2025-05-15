@@ -1,0 +1,213 @@
+PYTHON :
+      -- IT IS PROGRAMMING LANGUAGE, A HIGH-LEVEL, GENERAL-PURPOSE PROGRAMMING LANGUAGE.
+      -- CLEAN, READABLE SYNTAX. 
+	  -- OOP
+	  -- SUPPORTS  OBJECT-ORIENTED, IMPERATIVE, FUNCTIONAL, AND PROCEDURAL PROGRAMMING PARADIGMS.
+	  -- USED FOR WEB DEVELOPMENT, DATA ANALYSIS, MACHINE LEARNING, AUTOMATION(DEVOPS) , SCIENTIFIC COMPUTING, AND MORE.
+	  -- OUR SCOPLE IS LIMITED TO PYTHON SCRIPTING FOR DEVOPS ACTIVITIES 
+	  -- OOP focuses on the concepts of classes, objects, inheritance, encapsulation, polymorphism, and abstraction.
+	  
+	 
+
+PROGRAM        --> MULTIPLE LINES OF CODE / INSTRUCTIONS--> SOFTWARE --> TO CPU -- PROCESSOR 
+               -- Collection of code 
+			   -- It manipulates data 
+			   -- To store data we use variables 
+	 
+WHAT IS DATATYPE ?
+Data tyes -- diffrent types of DATA , kinds of values that can be stored and manipulated
+               
+			   
+			   Text -- str 
+			   Numeric - int, float, complex 
+			   Boolean - Bool (Only T / F ) 			   
+			   
+			   Sequence of items -- list, range, tuple  ( to store multiple items of diff data types ) 
+			   Mapping -- Dictionary 
+			   set - set 
+
+
+ X  = [ 10, 9.8 , "Swetha" , true ] 
+======================================
+
+
+OPERATORS :
+
+
+   sum =  a + b
+
+  ARITHMETIC   --->  + , - , * , /, %
+  
+  ASSIGNMENT   --->   = , +=, -+ , *=
+  
+  a=5 
+  a*=2  ---> a = a*2 
+  
+  7 <  5 
+   
+  COMPARISION  --->    < , > , <= , >= , == , !=  ( true / false ) 
+                      -eq , -lt , -le , -gt, -ge
+  
+  LOGICAL      --->  T & T -- T 
+  
+  IDENTITY     --->    is (==) is not (!=) 
+  
+  MEMBERSHIP   --->   in , not in 
+  
+  BITWISE     --->  & | ! ^ 
+
+##################################################
+
+int , float , string , boolean 
+
+LIST VS TUPLE  VS SET VS DICTIONARY 
+
+( to store multiple items of different data types )
+
+
+x = [ 1, 3.4, "madhu" , 4+5i, true ]
+
+x = ( 1, 3.4, "madhu" , 4+5i, true )
+
+x = { 1, 3.4, "madhu" , 4+5i, true }
+
+   mC_list = [1, 2, 3, 4, 5, 6 ,7,1]   ---> []   --> Ordered ,Mutable
+   
+   mC_tuple = (1, 2, 3, 4, 5,1 )  --->  ()     -->  Ordered ,Immutable No changable entries 
+   
+   mC_set = {1, 2, 3, 4, 5}    -->   {}     --> No duplicate entries 
+   
+   
+ ------------------  
+   
+   my_dict = {  key --- value 
+               "name": "Madhu", 
+               "age": 30, 
+			   "city": "Hyd"
+			   "address"  "madhapur"
+			   }
+   
+ ======
+ORDERED: 
+     POSTIONS OF DATA ARE FIXED  (LIST , TUPLE ) , Elements maintain their order; can be accessed via  Index.
+
+Mutable:   Elements can be changed, added, or removed.
+
+Duplicates: Allows duplicate elements.
+
+ ================
+ 
+
+1. List
+        An ordered, mutable collection of elements. Can have duplicates 
+
+ list = [1, 2, 3, 4, 1]
+
+============================
+2 Tuple
+     An ordered, immutable collection of elements.Can have duplicates 
+
+  tuple = (1, 2, 3, 4, 5,1 )
+           
+    Immutable: Once created, elements cannot be changed, added, or removed.
+	
+===========
+3. Set
+          An unordered, mutable collection of unique elements., NO DUPLICATES 
+ set = {1, 2, 3, 4}
+
+=============
+4. Dictionary
+
+        An unordered, mutable collection of key-value pairs.
+		
+   dict = {'NAME': 'MADHUKIRAN',
+          'MOBILE': '7396627149'
+		   'ADDRESS'  'MADHUKIRAN'
+		 
+		  
+		  }
+
+
+---------------------------------------
+I have a list of user names. I need to remove duplicates and store them efficiently
+
+
+
+  usernames = ["madhu", "kiran", "gorekar", "madhu", "xyz"]
+  
+  
+  
+          unique_usernames = list(set(usernames))
+     
+====================================================================
+  
+I'm building a contact book. I need to store names, phone numbers, and email addresses
+
+
+contact = {
+    "name": "Madhu",
+    "phone": "7396627149",
+    "email": "devopstraininghub@gmail.com"
+   }
+  
+
+contact_book = [
+    {"name": "Madhu", "phone": "7396627149", "email": "devopstraininghub@gmail.com"},
+     {"name": "xyz", "phone": "7396627149",  "email": "xyz@gmail.com"},
+]
+
+
+==================================================
+
+Real-Time DevOps Examples 
+
+List:
+
+Server IPs: 
+       A list of IP addresses of servers in a Cluster, which may change as servers are added or removed.
+
+   - Server IPs: ['192.168.1.1', '192.168.1.2', '10.81.0.3'] 
+
+   
+==============================
+
+
+Tuple:
+
+Server Configuration: 
+          A tuple containing fixed information about a server (IP, OS, version). Once set, these details should not change.
+		  
+          Immutable System Settings: Information about the region, availability zone, and instance type, which remains constant for the duration of a deployment.
+		  
+   - Server Configuration: ('192.168.1.1', 'Ubuntu', '18.04') 
+   - Immutable System Settings: ('US-East', 'us-east-1a', 'm5.large')		  
+		  
+====================
+	  
+Set:
+
+    Active Services --- A set of active services running on a server, where uniqueness (no duplicates) is crucial.
+	
+    Unique Error Codes ---A set of unique error codes encountered during operations, useful for monitoring and alerting.
+
+	- Active Services: {'nginx', 'redis', 'mysql', 'jenkins'} 
+	- Unique Error Codes: {404, 500, 502}
+	
+=====================
+
+Dictionaries :	
+	
+    Environment Variables: Key-value pairs representing environment variables for an application, where keys are unique and values can vary.
+	
+    Configurations: Dictionary of configurations, such as timeout settings and retry limits, where keys represent the setting and values are the parameters
+
+    - Environment Variables: {'DB_HOST': 'db.example.com', 
+	                           'DB_USER': 'admin'
+							   
+							   } 
+	
+    - Configurations: {
+	                   'timeout': 30, 
+					   'retries': 3
+					   }
