@@ -1,0 +1,102 @@
+FEW IMP/METHODS ON DATA TYPES :
+
+
+
+==========================================================================================
+LIST DATATYPE: 
+
+mc_list = [1,2,3,4,4,1,9,3,1]
+
+my_list.append(4)
+print("After append:", my_list)
+
+
+my_list.extend([8, 9, 7])
+print("After extend:", my_list)
+
+
+my_list.insert(0, 10)
+print("After insert:", my_list)
+
+# Removing the first occurrence of an element
+my_list.remove(1)
+print("After remove:", my_list)
+
+# Popping an element (removing and returning it)
+popped_element = my_list.pop()
+print("Popped element:", popped_element)
+print("After pop:", my_list)
+
+# Getting the index of an element
+index_of_9 = my_list.index(9)
+print("Index of 9:", index_of_9)
+
+# Counting the occurrences of an element
+count_of_1 = my_list.count(1)
+print("Count of 1:", count_of_1)
+
+# Sorting the list
+my_list.sort()
+print("After sort:", my_list)
+
+# Reversing the list
+my_list.reverse()
+print("After reverse:", my_list)
+
+# Copying the list
+copied_list = my_list.copy()
+print("Copied list:", copied_list)
+
+# Clearing the list
+my_list.clear()
+print("After clear:", my_list)
+
+# List properties and functions
+print("Length of  list:", len(my_list))
+print("Length of copied list:", len(copied_list))
+print("Maximum element:", max(copied_list))
+print("Minimum element:", min(copied_list))
+print("Sum of elements:", sum(copied_list))
+
+  
+============================================================================================
+  
+TUPLE :
+
+Immutability: Tuples cannot be modified once created. Methods like append(), remove(), pop(), etc., are not available.
+
+
+my_tuple = (3, 1, 4, 1, 5, 9, 2, 6, 5)
+
+# Counting the occurrences of an element
+count_of_1 = my_tuple.count(1)
+print("Count of 1:", count_of_1)
+
+# Getting the index of an element
+index_of_9 = my_tuple.index(9)
+print("Index of 9:", index_of_9)
+
+# Getting the length of the tuple
+length_of_tuple = len(my_tuple)
+print("Length of tuple:", length_of_tuple)
+
+# Finding the maximum element
+max_element = max(my_tuple)
+print("Maximum element:", max_element)
+
+# Finding the minimum element
+min_element = min(my_tuple)
+print("Minimum element:", min_element)
+
+# Calculating the sum of elements
+sum_of_elements = sum(my_tuple)
+print("Sum of elements:", sum_of_elements)
+
+# Getting a sorted list from the tuple
+sorted_list = sorted(my_tuple)
+print("Sorted tuple as list:", sorted_list)
+
+sorted_list.append(4)
+print("After append:", sorted_list)
+
+===============================================================================================
